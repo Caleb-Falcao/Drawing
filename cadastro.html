@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="desenho,draw,desenhar,manga,realista,animação">
+    <title>DRAWING</title>
+    <meta name="author" content="Caleb Falcão">
+    <meta name="description" content="Aqui você encontra dicas,
+                    tutoriais de como melhorar o seu desenho seja ele realista,
+                    animação ou estilo manga.">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body link="#536DFE" alink="#1976D2" vlink="#536DFE">
+    <header>
+        <!--//IMAGEM -->
+        <img src="img/drawing.png" alt="Banner dar pagina inicial do site Drawing & Creating com alguns 
+        desenhos" />
+    </header>
+    <!-------------------------------------------------------------------------------------------------->
+    <nav>
+        <!--Links-->
+        <a class="a-menu" href="index.html">HOME</a>
+        <a class="a-menu" href="index.html#pag-beneficios">BENEFICIOS</a>
+        <a class="a-menu" href="index.html#pag-desenhos">DESENHOS</a>
+        <a class="a-menu" href="index.html#pag-dicas">DICAS</a>
+        <a class="a-menu" target="_blanck" href="cadastro.html">CADASTRO</a>
+    </nav>
+
+    <section id="pag-cadastro">
+        <!--TITULO-->
+        <h1>Drawing, Desenhe como a gente!</h1>
+        <!-------------------------------------------------------------------------------------------------->
+        <!--SOBRE O SITE-->
+        <p>Faça o seu cadastro e receba dicas e tutorias para desenhar.</p>
+        <form name="" method="" action="">
+
+            <label for="nome">Nome:</label>
+            <input autofocus="" required placeholder="Digite seu nome completo" size="50" id="nome" name="name"
+                type="text" />
+
+            <label for="email">Email:</label>
+            <input required placeholder="nomeusuario@email.com" size="50" id="email" name="email" type="email" />
+
+            <label for="senha">Senha:</label>
+            <input required placeholder="Digite sua senha" size="50" id="senha" name="senha" type="password" />
+
+            <label for="celular">Celular:</label>
+            <input pattern="^\(?[0-9]{2}\)-([0-9]{8}|[0-9]{9})" required placeholder="(00)00000-0000" size="48"
+                id="celular" name="celular" type="tel" />
+            <!--patttern = Conjunto de codigos para determinar informações especificas.-->
+            <div id="data-hora">
+                <!--Data hora-->
+                <div>
+                    <label for="data">Data:</label>
+                    <input size="50" id="data" name="date" type="date" />
+                </div>
+                <div>
+                    <label for="hora">Hora:</label>
+                    <input size="50" id="hora" name="time" type="time" />
+                </div>
+            </div>
+            <!--selecionar-->
+            <label for="nivel">Nivel:</label>
+            <select id="nivel">
+                <option value="">Selecione</option>
+                <option value="Principiante">Principiante</option>
+                <option value="Intermediario">Intermediario</option>
+                <option value="Avançado">Avançado</option>
+            </select>
+            <!--radio-->
+            <fieldset>
+                <legend>Gênero</legend>
+                <input id="masc" type="radio" name="genero" value="masc" /> <label for="masc">Masculino</label>
+                <input id="fem" type="radio" name="genero" value="fem" /> <label for="fem">Feminino</label>
+            </fieldset>
+            <!--Checkbox-->
+            <fieldset>
+                <legend>Dicas</legend>
+                <input id="real" value="realista" name="dicas" type="checkbox"> <label for="real">Realista</label>
+                <input id="manga" value="manga" name="dicas" type="checkbox"> <label for="manga">Mangas</label>
+                <input id="esboço" value="esboço" name="dicas" type="checkbox"> <label for="esboço">Esboço</label>
+                <input id="pintura" value="pintura" name="dicas" type="checkbox"> <label for="pintura">Pinturas</label>
+            </fieldset>
+            <!--CAMPO DE TEXTO-->
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg" cols="50" rows="4"></textarea>
+            <div id="botoes-form">
+                <!--Botões-->
+                <input value="Cadastrar" type="submit" name="btn-cadastrar" />
+                <!--REQUIRED = OBRIGATORIO, VALUE= NOME DO BOTAO-->
+                <input value="Cancelar" type="reset" name="btn-resetar" />
+            </div>
+
+        </form>
+    </section>
+    <!-------------------------------------------------------------------------->
+    <footer>
+        <p>Desemvolvido por <a href="https://www.instagram.com/" target="_blanck">CALEB FALCÃO</a> - 2020
+        </p>
+    </footer>
+</body>
+
+</html>
